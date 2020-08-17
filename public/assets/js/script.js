@@ -82,7 +82,13 @@
 
 
 
-	        /* ======= Contact Form ======= */
+			/* ======= Contact Form ======= */
+			setTimeout(function() {
+				$(".alert").alert('close');
+			}, 3000);
+
+
+
 	        $('#contactForm').on('submit',function(e){
 
 	            e.preventDefault();

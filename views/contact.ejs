@@ -8,7 +8,7 @@
         <header>
             <% include header-body %>
         </header> <!-- end header -->
-        
+
         <!-- ::::::::::::::::::::: start breadcrumb:::::::::::::::::::::::::: -->
         <section class="page-title" style="background: url(images/contactus-banner.jpg) no-repeat;
                  background-size: cover;background-position: center;">
@@ -28,6 +28,14 @@
         <section class="section-padding">
             <div class="container">
                 <div class="row">
+                        <% if(success  !='') {%>
+                            <div class="alert alert-success" role="alert">
+                                <strong>Success!</strong> <%= success %> 
+                            </div>
+                        <% } %>
+                </div><!-- end row -->
+                
+                <div class="row">
                     <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
                         <!-- contact title -->
                         <div class="template-title text-center">
@@ -40,7 +48,7 @@
                 <div class="row">
                     <div class="col-md-8">
 
-                        <form class="contact-form" id="" name="contactform" action="#" method="POST">
+                        <form class="contact-form" id="" name="contactform" action="/contact" method="POST">
                             <div class="row">
                                 <div class="col-md-12">
                                     <p style="color:red;"></p>

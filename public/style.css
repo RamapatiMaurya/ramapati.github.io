@@ -217,12 +217,15 @@ input:-webkit-autofill:focus {
 /* header top bar 
 ------------------------*/
 .header-top-area{
-    height: 50px; 
-    background: #3452FF;
+    /* height: 50px;  */
+    /* background: #3452FF; */
     font-size: 14px; 
-    color: #FFFFFF;
+     color: #333333; 
+    background-color: #fff;
+    border-bottom: 1px solid #f2f2f2;
     font-family: "Titillium Web",sans-serif;
 }
+
 .contact p{
     float: none;
     margin-right: 50px;

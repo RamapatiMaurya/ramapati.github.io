@@ -5,7 +5,7 @@ router.use(express.static(__dirname+"./public/"))
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Excellent Magnetics India Pvt. Ltd.' });
+  res.render('index', { title: 'Excellent Magnetics India' });
 });
 
 /* GET About page. */
